@@ -19,13 +19,19 @@ void gcd(int a, int b)
  
     m=a;
     n=b;
- 
+    cout << " m :" << m ;
+    cout << " n :" << n<< endl;
     while(m!=n)
     {
-        if(m>n)
+        if(m>n){
             m=m-n;
-        else
+            cout << " m :" << m ;
+            cout << " n :" << n<< endl;
+        }
+        else{
             n=n-m;
+            cout << " m :" << m ;
+            cout << " n :" << n<< endl;}
     }
  
     cout << "\nEBOB " << a <<" & " << b << ": " << m;
